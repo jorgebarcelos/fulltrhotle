@@ -3,7 +3,6 @@
 from src.models import models
 
 
-
 def test_motorcycle_info():
     bike = models.Motorcycle('Honda', 'Fury', 'Cruiser', 170)
     assert bike.brand == 'Honda'

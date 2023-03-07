@@ -4,7 +4,7 @@
 # parent, root = file.parent, file.parents[1]
 # sys.path.append(str(root))
 
-from models.models import Motorcycle
+from src.models.models import Motorcycle
 from typing import List
 
 
@@ -16,6 +16,5 @@ class MotorcycleController:
         cls.motorcycles.append(motorcycle)
 
     @classmethod
-    def list_motorcycles(cls)-> List[Motorcycle]:
+    def list_motorcycles(cls) -> List[Motorcycle]:
         return cls.motorcycles
-
